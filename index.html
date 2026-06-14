@@ -181,11 +181,7 @@
         <div class="stb"><div class="stn">54h</div><div class="stl">average hours teachers work per week — vs. 39h contracted</div></div>
         <div class="stb"><div class="stn">44%</div><div class="stl">of K-12 workers feel burned out "very often" or "always" — the highest of any industry</div></div>
       </div>
-      <div class="vph">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none"/></svg>
-        <span id="vc1" style="font-size:13px">Video starting in 2s...</span>
-        <span style="font-size:12px;color:var(--tt)">[Your HeyGen / Synthesia avatar clip goes here]</span>
-      </div>
+      <video src="intro.mp4" autoplay muted playsinline controls style="width:100%;border-radius:var(--radius-lg);margin:1.5rem 0;display:block"></video>
       <button class="btn" onclick="goQ1(0)">Help us build something for you &rarr;</button>
     </div>
   </div>
@@ -418,7 +414,7 @@ function runOpening() {
       phS.style.display = 'block';
       void phS.offsetWidth;
       phS.style.opacity = '1';
-      countdown('vc1', 2);
+
     }, 500);
   }, 2400);
 }
