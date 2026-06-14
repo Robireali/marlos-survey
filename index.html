@@ -181,7 +181,7 @@
         <div class="stb"><div class="stn">54h</div><div class="stl">average hours teachers work per week — vs. 39h contracted</div></div>
         <div class="stb"><div class="stn">44%</div><div class="stl">of K-12 workers feel burned out "very often" or "always" — the highest of any industry</div></div>
       </div>
-      <video src="intro.mp4" playsinline controls style="width:100%;border-radius:var(--radius-lg);margin:1.5rem 0;display:block"></video>
+      <video id="intro-vid" src="intro.mp4" autoplay muted playsinline controls style="width:100%;border-radius:var(--radius-lg);margin:1.5rem 0;display:block"></video>
       <button class="btn" onclick="goQ1(0)">Help us build something for you &rarr;</button>
     </div>
   </div>
@@ -681,6 +681,12 @@ function submitWaitlist() {
 }
 
 runOpening();
+
+document.addEventListener('click', function unmute() {
+  var v = document.getElementById('intro-vid');
+  if (v) { v.muted = false; }
+  document.removeEventListener('click', unmute);
+}, { once: true });
 </script>
 </body>
 </html>
