@@ -178,8 +178,8 @@
       <p style="font-size:13px;color:#6b7280;font-style:italic;padding-bottom:0.75rem;border-bottom:0.5px solid #e5e7eb;margin-bottom:1rem">"When was the last time you felt truly on top of your work as a teacher?"</p>
       <div class="prog"><div class="progf" style="width:5%"></div></div>
       <div class="strow">
-        <div class="stb"><div class="stn">54h</div><div class="stl">average hours teachers work per week — vs. 39h contracted</div></div>
-        <div class="stb"><div class="stn">44%</div><div class="stl">of K-12 workers feel burned out "very often" or "always" — the highest of any industry</div></div>
+        <div class="stb"><div class="stn">7.4h</div><div class="stl">spent on lesson prep per week on average (OECD TALIS 2024, 55 countries)</div></div>
+        <div class="stb"><div class="stn">52%</div><div class="stl">of teachers say administrative work is their biggest source of stress (OECD TALIS 2024, 280,000 teachers)</div></div>
       </div>
       <video id="intro-vid" src="intro.mp4" autoplay muted playsinline controls style="width:100%;border-radius:var(--radius-lg);margin:1.5rem 0;display:block"></video>
       <button class="btn" onclick="goQ1(0)">Help us build something for you &rarr;</button>
@@ -392,7 +392,7 @@ function show(id) {
 
 function runOpening() {
   var el = document.getElementById('oq0');
-  el.textContent = 'When was the last time you felt truly on top of your work as a teacher?';
+  el.textContent = 'Which part of your week do you wish you could spend more time on — and what gets in the way?';
   el.style.opacity = '0';
   el.style.transform = 'translateY(10px)';
   void el.offsetWidth;
