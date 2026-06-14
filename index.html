@@ -414,6 +414,8 @@ function runOpening() {
       phS.style.display = 'block';
       void phS.offsetWidth;
       phS.style.opacity = '1';
+      var vid = phS.querySelector('video');
+      if (vid) { vid.currentTime = 0; vid.play(); }
 
     }, 500);
   }, 2400);
